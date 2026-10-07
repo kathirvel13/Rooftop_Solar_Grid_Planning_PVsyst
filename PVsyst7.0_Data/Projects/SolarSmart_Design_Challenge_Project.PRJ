@@ -1,0 +1,47 @@
+﻿PVObject_=pvProject
+  Comment=SolarSmart_Design_Challenge
+  Version=7.4.7
+  Flags=$00080010
+MeteoFileName=PSG_iTech_MN81_SYN.MET
+PVObject_SitePrj=pvSite
+  Comment=PSG_iTech;India;Asia;
+  Flags=$0006283F
+  NomF=PSG_iTech_MN81.SIT
+  Site=PSG_iTech
+  Country=India
+  Region=Asia
+  Source=Meteonorm 8.1 (1991-2010), Sat=100%
+  SourceType=Meteonorm81DLL
+  Latitude=11.0655
+  Longitude=77.0932
+  Altitude=374
+  TimeZone=5.5
+  HLeg=True
+  UnitsDisp=kWh_m2_m
+  Albedo=0.20
+  DateBeg=01/01/80 00:00
+  DateEnd=31/12/80 23:00
+  GlobalH=161.8,165.5,187.7,179.4,178.4,152.5,140.2,144.7,152.2,148.9,136.9,141.7,1889.8,
+  DiffuseH=63.4,62.8,76.2,79.9,87.8,78.1,83.8,91.3,75.3,71.4,68.0,63.1,901.2,
+  TAmb=24.80,26.54,28.64,29.01,28.53,26.46,26.31,26.01,26.19,26.20,24.97,24.47,26.51,
+  WindVel=1.90,2.20,2.30,2.49,3.60,4.70,4.69,4.39,3.80,2.29,1.60,1.80,2.99,
+  Linke=4.054,4.177,5.033,5.505,5.594,4.460,4.864,4.512,4.080,4.772,4.513,4.152,4.647,
+  RelHum=0.608,0.539,0.544,0.647,0.702,0.757,0.755,0.770,0.756,0.757,0.763,0.693,0.692,
+  Extraterr=271.8,267.2,316.4,316.3,325.3,310.8,321.6,324.1,308.8,301.9,268.8,263.4,3596.5,
+  YrToYrVar=6.200
+End of PVObject pvSite
+Albedo=0.200,0.200,0.200,0.200,0.200,0.200,0.200,0.200,0.200,0.200,0.200,0.200,
+DesignTempMin=-10
+TempOper=50
+TempOperMin=20
+TempOperMax=60
+LimOverloadLoss=3.00
+DiscrOrientDiff=1.00
+SpreadMaxDiff=10.00
+MaxSystem_ShdRatio=2.50
+RegionMeteo=1
+CorrAlttemp=-0.0055
+SiteMeteoMaxDistForList=10
+TranspositionAlgorithm=CircSolSeparate
+ACLossesRef=STC
+End of PVObject pvProject
