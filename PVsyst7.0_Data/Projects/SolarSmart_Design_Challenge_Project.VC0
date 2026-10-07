@@ -1,12 +1,12 @@
 ﻿PVObject_=pvVCalcul
   Comment=New simulation variant
   Version=7.4.7
-  Flags=$040A0001
+  Flags=$050A0001
   DateDebS=01/01/90 00:00
   DateFinS=31/12/90 23:00
-  DateCalcul=07/10/26 23:31
+  DateCalcul=07/10/26 23:51
   VersionSimul=7.4.7
-  SimDuration=3375
+  SimDuration=3328
   SystemKindCustom=False
   SystemKind=Tables on a building
   PRCorrTemp=False
@@ -802,7 +802,7 @@
           End of List Subcosts
       EndTags
     End of List InvestmentCosts
-    OperatingCosts, list of=5 OperatingCost
+    OperatingCosts, list of=2 OperatingCost
       OperatingCost=1
           CostIdent=opeCustom
           CostCredit=incCost
@@ -810,48 +810,6 @@
           Price=14071.97
       EndTags
       OperatingCost=2
-          CostIdent=opeInsurance
-          CostCredit=incCost
-          Name=Insurance
-          Subcosts, list of=5 OperatingCost
-            OperatingCost=1
-                CostIdent=opeInstallationInsurance
-                CostCredit=incCost
-                Name=Facilities insurance
-            EndTags
-            OperatingCost=2
-                CostIdent=opeLiabilityInsurance
-                CostCredit=incCost
-                Name=Liability insurance
-            EndTags
-            OperatingCost=3
-                CostIdent=opeInterruptInsurance
-                CostCredit=incCost
-                Name=Business interruption insurance
-            EndTags
-            OperatingCost=4
-                CostIdent=opeLackOfSunInsurance
-                CostCredit=incCost
-                Name=Lack of sunlight insurance
-            EndTags
-            OperatingCost=5
-                CostIdent=opeLoanInsurance
-                CostCredit=incCost
-                Name=Loan insurance
-            EndTags
-          End of List Subcosts
-      EndTags
-      OperatingCost=3
-          CostIdent=opeAdministrative
-          CostCredit=incCost
-          Name=Administrative, accounting
-      EndTags
-      OperatingCost=4
-          CostIdent=opeSubsidies
-          CostCredit=incCredit
-          Name=Subsidies
-      EndTags
-      OperatingCost=5
           CostIdent=opeMaintenance
           CostCredit=incCost
           Name=Maintenance
@@ -860,14 +818,14 @@
                 CostIdent=opeInverterReplacement
                 CostCredit=incCost
                 Name=Provision for inverter replacement
-                Price=27500.00
+                Price=5500.00
             EndTags
           End of List Subcosts
       EndTags
     End of List OperatingCosts
     OwnFunds=1172664.00
     DiscountRate=0.0800
-    InvertersLifeTime=5.00
+    InvertersLifeTime=25.00
     BatteriesLifeTime=0.00
     FuelPricePerLiter=96.35
     DiscountRate=0.0800
@@ -1649,6 +1607,21 @@
     ConsumptionMonthType=2,2,2,1,1,1,1,1,1,2,2,2,
   End of TEcoEvaluation
 
+  P50_P90=TP50_P90
+    MeteoKind=MonthAverage
+    P90Custom=90
+    PxxCustom=95
+    PxxReport=True
+    PxxMainResults=False
+    PlotKind=1
+    MeteoAnnualVariab=6.200
+    PVModelVariab=1.000
+    InverterVariab=0.500
+    SoilingVariab=1.000
+    DegradVariab=1.000
+    CustomVarLabel=Custom variability
+  EndTags
+
   PVObject_CarbonBalance=pvCarbonBalance
     Flags=$00
     System_Lifetime=25.000
@@ -2222,11 +2195,10 @@
         NAccLim=4237
         BinCenter=False
         XPas=0.200
-        Accum=10.77,34.34,29.76,27.47,14.68,10.85,19.91,40.38,67.87,54.85,65.09,82.86,117.76,91.51,89.80,136.30,145.18,181.67,188.27,155.88,155.85,171.83,188.75,173.45,195.77,148.33,196.02,120.92,199.84,147.72,128.20,207.51,175.54,213.81,227.33,226.77,175.17,180.63,231.56,245.46,226.58,contd,
-        Accum_contd=274.11,246.45,226.78,258.45,273.19,269.36,294.24,261.89,396.27,474.23,329.69,293.95,460.54,447.14,366.44,384.27,425.45,479.20,381.04,338.73,270.35,474.39,380.83,503.08,327.78,385.40,351.59,410.90,305.95,366.66,415.10,377.33,456.35,536.52,317.18,381.90,356.68,502.27,540.74,contd,
-        Accum_contd=547.57,570.49,346.39,384.04,506.53,547.25,656.82,490.34,566.35,662.50,452.88,585.26,481.51,654.57,377.68,591.91,617.95,604.73,473.03,279.08,603.30,649.94,717.70,558.91,605.98,527.07,575.08,686.97,802.49,853.65,706.92,825.11,675.00,931.18,870.44,461.82,513.00,727.65,734.63,contd,
-        Accum_contd=429.65,747.07,486.01,661.60,617.49,497.86,4350.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,contd,
-        Accum_contd=0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+        Accum=0.01,0.03,0.03,0.03,0.01,0.01,0.02,0.04,0.07,0.05,0.07,0.08,0.12,0.09,0.09,0.14,0.15,0.18,0.19,0.16,0.16,0.17,0.19,0.17,0.20,0.15,0.20,0.12,0.20,0.15,0.13,0.21,0.18,0.21,0.23,0.23,0.18,0.18,0.23,0.25,0.23,0.27,0.25,0.23,0.26,0.27,0.27,0.29,0.26,0.40,0.47,0.33,0.29,0.46,0.45,contd,
+        Accum_contd=0.37,0.38,0.43,0.48,0.38,0.34,0.27,0.47,0.38,0.50,0.33,0.39,0.35,0.41,0.31,0.37,0.42,0.38,0.46,0.54,0.32,0.38,0.36,0.50,0.54,0.55,0.57,0.35,0.38,0.51,0.55,0.66,0.49,0.57,0.66,0.45,0.59,0.48,0.65,0.38,0.59,0.62,0.60,0.47,0.28,0.60,0.65,0.72,0.56,0.61,0.53,0.58,0.69,0.80,0.85,contd,
+        Accum_contd=0.71,0.83,0.68,0.93,0.87,0.46,0.51,0.73,0.73,0.43,0.75,0.49,0.66,0.62,0.50,4.35,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,contd,
+        Accum_contd=0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
       End of THistogramme
     End of PVObject pvSimulPlot
     PVObject_=pvSimulPlot
